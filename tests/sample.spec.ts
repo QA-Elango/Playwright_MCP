@@ -3,7 +3,7 @@ import { createPublicKey } from 'node:crypto';
 
 
 test("open browser",async() =>{
-    const browser = await chromium.launch({headless:false});
+    const browser = await chromium.launch({headless:true});
 	const page = await browser.newPage();
   await page.goto("https://google.com");
 })
